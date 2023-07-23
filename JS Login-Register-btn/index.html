@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Form Section -->
+    <div class="container">
+        <div class="loginRegisterForm">
+            <h1 id="formTitle">Login</h1>
+            <div class="switchbtn">
+                <button onclick="showLoginForm()" id="showLogin" class="active" >Login</button>
+                <button onclick="showRegisterForm()" id="showRegister" >Register</button>
+            </div>
+            <div id="loginForm">
+                <form>
+                    <div class="center">
+                        <input type="email" id="loginEmail" class="inputText" placeholder="Enter email">
+                        <input type="password" id="loginPassword" class="mt10 inputText" placeholder="Enter password">
+                    </div>
+                    <div class="forgotPass-remenberMe">
+                        <div class="forgotPass">
+                            <a href="Javascript:void(0);" id="forgotPassword">Forgot Password ?</a>
+                        </div>
+                        <div class="remember-me">
+                            <input type="checkbox" name="checkbox" id="rememberMe">
+                            <label for="rememberMe">Remember Me</label>
+                        </div>
+                    </div>
+                    <div class="center mt20">
+                        <input type="submit" value="Login" id="loginBtn" class="submitBtn">
+                    </div>
+                    <div class="center mt20 dont-have-account">
+                        <p>don't Have an Account ?</p>
+                        <a href="#" onclick="showRegisterForm()">Register Now</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Registration Form -->
+            <div id="ragisterForm">
+                <form action="#">
+                    <div class="center">
+                        <input type="text" class="inputText mt10" id="regiName" placeholder="Enter name">
+                        <input type="email" class="inputText mt10" id="regiEmail" placeholder="Enter email address">
+                        <input type="password" class="inputText mt10" id="regiPassword" placeholder="Enter password">
+                        <input type="password" class="inputText mt10" id="regiConPassword" placeholder="Enter confirm password">
+                    </div>
+                    <div class="center mt20">
+                        <input type="submit" value="Register" class="submitBtn">
+                    </div>
+                </form>
+                <div class="center mt20 already-have-acc">
+                    <p>Already Have an Account ? <a href="#" onclick="showLoginForm()">Login Now</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+    
+</body>
+</html>

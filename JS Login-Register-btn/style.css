@@ -1,0 +1,160 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+.center{
+    text-align: center;
+}
+
+.mt10{
+    margin-top: 10px;
+}
+
+.mt20{
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    float: left;
+    background: #ebe8e8;
+}
+
+.loginRegisterForm{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0 #353333;
+    padding: 15px;
+    border-radius:10px ;
+}
+
+#formTitle{
+    padding-top: 10px ;
+    font-weight: bolder;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.switchbtn{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.switchbtn button{
+    font-size: 17px;
+    font-weight: bolder;
+    width: 175px;
+    height: 40px;
+    border: 1px solid #747474;
+    background: transparent;
+    transition: 0.4s;
+    cursor: pointer;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.switchbtn .active{
+    color: #fff;
+	background: #747474;
+}
+
+.inputText{
+	width: 100%;
+	height: 38px;
+	border: 0px;
+	border: 1px solid #747474;
+	box-sizing: border-box;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 17px;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.inputText:focus{
+    outline: none;
+}
+
+.forgotPass-remenberMe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+    font-size: 14px;
+    margin-top:10px;
+}
+
+.forgotPass-remenberMe #forgotPassword{
+    color: #002b27;
+	transition: 0.4s;
+    font-style: italic;
+}
+
+.forgotPass-remenberMe #forgotPassword:hover{
+    font-weight: bold;
+}
+
+.remember-me input{
+   height: 12px;
+}
+
+.submitBtn{
+    width: 350px;
+    height: 42px;
+    font-size: 17px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition:0.4s ;
+    background-color: #747474;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.submitBtn:hover{
+	background-color: #444444;
+	color: #fff;
+}
+
+.dont-have-account,
+.already-have-acc{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #747474;
+}
+
+.dont-have-account a,
+.already-have-acc a{
+    font-style: italic;
+}
+
+.dont-have-account a:hover,
+.already-have-acc a:hover{
+    font-weight: 700;
+}
+
+#ragisterForm{
+    display: none;
+}
+
+.error-input{
+	border: 1px solid #ff5b5b;
+}
